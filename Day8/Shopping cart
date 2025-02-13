@@ -1,0 +1,77 @@
+import time
+
+items = []
+prices = []
+
+
+new = input("\n Welcome to A+ Shopping Cart!(q to quit, any answer to continue)")
+
+while True:
+    if new.lower() == "q":
+        for x in reversed(range(1, 10, 2)):
+            print("        ___")
+            time.sleep(2)
+            print(f"       |_{x}_|", end=" ")
+            print()
+        time.sleep(1)
+        print()
+        print("                          🙋!Bye!🙋")
+        print()
+        print("                        See You Soon!")
+        break
+
+    item = input("Enter an item to buy (c for going to  cashier and q to quit): ")
+    if item.lower() == "q":
+    
+        for x in reversed(range(1, 10, 2)):
+            print("        ___")
+            time.sleep(2)
+            print(f"       |_{x}_|", end=" ")
+            print()
+        time.sleep(1)
+        print()
+        print("                          🙋!Bye!🙋")
+        print()
+        print("                        See You Soon!")
+        break
+    elif item.lower() == "c":
+        print()
+        print("Going and waiting for the cashier line.  ")
+        time.sleep(1)
+        print()
+        print("Going and waiting for the cashier line . ")
+        time.sleep(1)
+        print()
+        print("Going and waiting for the cashier line  .")
+        time.sleep(1)
+        print()
+        print("Going and waiting for the cashier line.  ")
+        time.sleep(1)
+        print()
+        review = print("Check-cart before the casheer step:")
+        time.sleep(1)
+        print(f"You have {total_i} items in your cart")
+        print(f"They cost ${total_p} in total")
+        time.sleep(2)
+        end = input("Would you like to buy the items? (Y/N)")
+        if end.lower() == "y":
+            for x in reversed(range(1, 10, 2)):
+                print("        ___")
+                time.sleep(2)
+                print(f"       |_{x}_|", end=" ")
+                print()
+            time.sleep(1)
+            print()
+            print("                          🙋!Bye!🙋")
+            print()
+            print("                        See You Soon!")
+            break
+        else:
+            continue
+
+    else:
+        price = float(input(f"Enter the price of a/an {item}: $"))
+        items.append(item)
+        prices.append(price)
+        total_i = len(items)
+        total_p = sum(prices)
