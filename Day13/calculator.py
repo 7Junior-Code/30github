@@ -18,6 +18,7 @@ operations = {"+": add,
               "*": multiply,
               "/": divide
 }
+
 def calculator():
     print(asciiart.l_calculator)
     continue_calculate = True
