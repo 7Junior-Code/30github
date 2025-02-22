@@ -1,0 +1,24 @@
+
+import time
+
+  print('''   Welcome to Universe Spark
+   _______              
+  /_  __(_)_ _  ___ ____
+   / / / /  ' \/ -_) __/
+  /_/ /_/_/_/_/\__/_/   
+                        ''')
+
+  set_time = int(input("Enter the time in seconds: "))
+  set_time = set_time + 1
+  for flash in reversed(range(1, set_time)):
+      secs = flash % 60
+      mins = int(flash /60) % 60
+      hours = int(flash / 3600)
+
+      print(f"{hours:02}:{mins:02}:{secs:02}")
+      time.sleep(1)
+  for x in reversed(range(1, 17)):
+      print("TIME'S UP!", end="         ")
+  for slashed in range(1, 11):
+      print(()*3)
+      print(slashed, end=" ")
